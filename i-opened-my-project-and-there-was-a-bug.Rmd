@@ -163,8 +163,6 @@ Embrace [meta learning](https://edwinth.github.io/meta-learning/)
 
 # Deliver value
 
-## Answer > Process
-
 ## 
 
 > "Just tell me what to optimise on!" - Hilary Parker, Not So Standard Deviations
@@ -173,6 +171,17 @@ Embrace [meta learning](https://edwinth.github.io/meta-learning/)
 * What is the most important metric to your customer?
 * If you don't know, ask!
 * Make sure your solution addresses that metric
+</aside>
+
+
+## Answer > Process
+
+<aside class="notes">
+* Your process is (probably) interesting, but tell your customer the answer
+* Then they can decide how much they care about the process
+* It doesn't matter if your process was perfect if the answer is inconsequential
+* But don't completely abandon a description of process, especially with colleagues
+    * As your answer might not be so valid if your process was bad!
 </aside>
 
 ## Make a plot
