@@ -1,0 +1,27 @@
+---
+title: "I opened my project and there was a bug"
+author: "And other things I have learned"
+date: "`r Sys.Date()`"
+output: 
+    revealjs::revealjs_presentation:
+        self_contained: false
+        reveal_plugins: "notes"
+---
+
+# Introduction
+
+## Who am I?
+
+![who](www/who.gif)
+
+<aside class="notes">
+* Started at KPMG in 2012
+    * Where I met Enda
+* Early career as a data analyst/junior data scientist
+* Self study, then MSc Data Science
+* Worked on a variety of problems
+    * ML, non-ML, calculations, remediations, forensics
+</aside>
+
+## Why I'm here
+
