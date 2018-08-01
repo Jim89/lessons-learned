@@ -1,6 +1,6 @@
 ---
 title: "I opened my project and there was a bug"
-author: "And other things I have learned"
+author: "Things I have learned 'doing data'"
 date: "`r Sys.Date()`"
 output: 
     revealjs::revealjs_presentation:
@@ -8,9 +8,7 @@ output:
         reveal_plugins: "notes"
 ---
 
-# Introduction
-
-## Who am I?
+##
 
 ![who](www/who.gif)
 
@@ -18,10 +16,166 @@ output:
 * Started at KPMG in 2012
     * Where I met Enda
 * Early career as a data analyst/junior data scientist
-* Self study, then MSc Data Science
+* Self study, then MSc Data Science - including a placement at Sains
 * Worked on a variety of problems
     * ML, non-ML, calculations, remediations, forensics
+* An admition, I won't be talking much about bugs    
+* CAUTION: Mostly stupid pictures and gifs
 </aside>
 
-## Why I'm here
+# Some basic principles
+
+## Meet your customer
+
+![meeting](www/meeting.png)
+
+<aside class = "notes">
+* Obviously they're too happy to be in a meeting
+* BUT - meeting your customer/end user is crucial
+* Ideally face-to-face
+* Make it regular, keep them involved
+* Solicit feedback early, and often
+* Discuss the odd things you see
+* Resolve issues
+</aside>
+
+## Do some analysis
+
+![analysis](www/analysis.gif)
+
+<aside class="notes">
+* Understand the issue, understand the data
+* Is the issue noteworthy?
+* What are the (sub)populations
+* Size your data = size the problem
+* Let's you talk about the impact of your work
+</aside>
+
+## {data-background="www/solve-problem.jpg"}
+
+<aside class="notes">
+* Focus your efforts on things that solve the customer's problem
+* If it's not helping you solve the problem, why are you doing it?
+* E.g. intricate solution for insignificant subpopulation isn't really solving the problem, it's tinkering
+* Separate tack - X was an issue, so we did Y to solve/circumvent it
+</aside>
+
+## Keep it simple (stupid)
+
+![kiss](www/kiss.jpg)
+
+<aside class="notes">
+* Assuming we need "an algorithm" or "analytics"
+* Can you solve the problem by counting and sorting? Do that.
+* Does a simple model (e.g. linear/logistic regression) do as well as a complex one? Use it.
+* 
+</aside>
+
+# Managing complexity
+
+## Ask questions
+
+![questions](www/questions-largest.gif)
+
+## Write it down
+
+![notes](www/notes.gif)
+
+## Track, track, track
+
+![tracks](www/tracks.gif)
+
+## Version control
+
+![flow](www/git-flow.png)
+
+## Automate it 
+
+![auto](www/automation.png)
+
+## Bucket and move on
+
+# Almost life advice
+
+## Embrace others
+
+## Recognise yourself
+
+> "Stuart Lee is not funny and has nothing to say" - Telegraph [via Stuart Lee show poster]
+
+![presenter](www/larry-presenter.gif)
+
+<aside class="notes">
+* Saw the quote on an advert, at the time thought it was funny, but it stuck with me
+* Everyone I've met has imposter syndrome
+* Recognise your achievements/embrace that you don't know everything
+* Encouragement - I know (comparatively) very little about a lot of things, but here I am; you can be here too.
+</aside>
+
+## Everyday is a school day
+
+Embrace [meta learning](https://edwinth.github.io/meta-learning/)
+
+1. What
+2. How
+3. Why
+
+<aside class="notes">
+* Links to previous topic
+* There is always something new to learn in this field
+* Define yourself
+* Decide what you'll learn, how you will learn it, and why you want to learn it
+* Hint: because it fits your definition of who you are/what you do
+</aside>
+
+
+# Deliver value
+
+## Answer > Process
+
+
+
+## 
+
+> "Just tell me what to optimise on!" - Hilary Parker, Not So Standard Deviations
+
+<aside class="notes">
+* What is the most important metric to your customer?
+* If you don't know, ask!
+* Make sure your solution addresses that metric
+</aside>
+
+## Make a plot
+
+![vader](www/graphs-vader.PNG)
+
+<aside class="notes">
+* "A picture tells a thousand words" - duh!
+* But pick the right plot - remember, keep it simple
+* Lot's of great resources out there, e.g. Truthful Art, Storytelling with Data
+* Strip away anything that's not your key message; that doesn't relate to the
+thing you were optimising
+</aside>
+
+
+## {data-background="www/perspective.svg"}
+
+<aside class="notes">
+* Your model metrics are good
+    * You have an AUC of X
+    * The MSE is Y
+* Your customer probably doesn't care
+* Tell them it will:
+    * "Generate Y revenue"
+    * "Increase [thing] by Z%"
+    * "Provide cost reductions of ..."
+* Communicate in the language of the problem
+    * No one asked you to build a model with X/Y/Z properties
+    * They asked you to solve a problem
+    * Demonstrate _how_ your solution solves the problem
+</aside>
+
+# Thank you
+
+
 
