@@ -19,7 +19,7 @@ output:
 * Self study, then MSc Data Science - including a placement at Sains
 * Worked on a variety of problems
     * ML, non-ML, calculations, remediations, forensics
-* An admition, I won't be talking much about bugs    
+* An admission, I won't be talking much about bugs    
 * CAUTION: Mostly stupid pictures and gifs
 </aside>
 
@@ -30,6 +30,7 @@ output:
 ![meeting](www/meeting.png)
 
 <aside class = "notes">
+* If you don't know who that is - find out!
 * Obviously they're too happy to be in a meeting
 * BUT - meeting your customer/end user is crucial
 * Ideally face-to-face
@@ -89,11 +90,42 @@ output:
 
 ![flow](www/git-flow.png)
 
+<aside class="notes">
+* Manual VC = acceptable in a pinch, but
+* Lots of tools for this
+* Provides confidence
+</aside>
+
 ## Automate it 
 
 ![auto](www/automation.png)
 
+<aside class="notes">
+* Prefer code to manual/graphical methods
+* Even (e.g) downloading some data - can do manually, but a script is better
+* Don't need all automation up-front
+    * Even just note down your steps as you go, semi-automates it for next time
+    * Eventually can add snippets for each step
+    * Finally roll up in to a solution
+</aside>
+
 ## Bucket and move on
+
+![bucket](www/bucket.gif)
+
+<aside class="notes">
+* Bucket = subpopulation, sub-task, sub-anything
+* Size the bucket, determine if action required, proceed
+* Weird set of records? 
+    * How many? 
+    * Potential impact?
+    * Remediating action?
+* Complex sub-task?
+    * Solves the problem?
+    * Effort & duration?
+    * Need to proceed?
+* Progress to goal - set time bucket, keep improving until time runs out, then stop    
+</aside>
 
 # Almost life advice
 
@@ -133,8 +165,6 @@ Embrace [meta learning](https://edwinth.github.io/meta-learning/)
 
 ## Answer > Process
 
-
-
 ## 
 
 > "Just tell me what to optimise on!" - Hilary Parker, Not So Standard Deviations
@@ -173,6 +203,7 @@ thing you were optimising
     * No one asked you to build a model with X/Y/Z properties
     * They asked you to solve a problem
     * Demonstrate _how_ your solution solves the problem
+* Remember - it's just data/work    
 </aside>
 
 # Thank you
