@@ -1,6 +1,6 @@
 ---
 title: "I opened my project and there was a bug"
-author: "Things I have learned 'doing data'"
+author: "Things I have learned doing data"
 date: "`r Sys.Date()`"
 output: 
     revealjs::revealjs_presentation:
@@ -45,11 +45,11 @@ output:
 ![analysis](www/analysis.gif)
 
 <aside class="notes">
-* Understand the issue, understand the data
-* Is the issue noteworthy?
-* What are the (sub)populations
+* Helps you to understand the issue, understand the data
+* Helps quantify if the issue noteworthy?
+* What are the (sub)populations?
 * Size your data = size the problem
-* Let's you talk about the impact of your work
+* Let's you talk about the impact of your work, e.g. affects X customers, Y% of products
 </aside>
 
 ## {data-background="www/solve-problem.jpg"}
@@ -59,6 +59,8 @@ output:
 * If it's not helping you solve the problem, why are you doing it?
 * E.g. intricate solution for insignificant subpopulation isn't really solving the problem, it's tinkering
 * Separate tack - X was an issue, so we did Y to solve/circumvent it
+    * I.e. solve the problem before you report on it
+    * Or at least propose solutions (if you can!)
 </aside>
 
 ## Keep it simple (stupid)
@@ -68,8 +70,10 @@ output:
 <aside class="notes">
 * Assuming we need "an algorithm" or "analytics"
 * Can you solve the problem by counting and sorting? Do that.
-* Does a simple model (e.g. linear/logistic regression) do as well as a complex one? Use it.
-* 
+* Does a simple model (e.g. linear/logistic regression) do as well as a complex
+one? Use it.
+* Does a simple, but less "elegant" bit of code solve your problem - use it,
+don't re-write it!
 </aside>
 
 # Managing complexity
@@ -78,22 +82,54 @@ output:
 
 ![questions](www/questions-largest.gif)
 
+<aside class="notes">
+* Seems obvious but I've seen questions not be asked and work proceed based on hunches/guesses
+* Ask _open_ questions at the start, narrow down later
+    * Can you tell me about...
+    * What do you see the impact of X as?
+    * What outcome(s) would you like to see
+* This will help build your understanding of the issue 
+* Take note of the answer
+* If you find yourself asking the same questions at the start of a project, turn
+then in to a resource for you/others in the future!
+</aside>
+
 ## Write it down
 
 ![notes](www/notes.gif)
+
+<aside class="notes">
+* Helps me to remember things, not necessarily for everyone, but use a technique
+* Gives you a reference for later
+* Write it for yourself, but also get responses/feedback in writing
+    * E.g. initial request, clarifications, sign off
+    * Useful to summarise your understanding for a collaborator
+    * Especially for dynamic/chaotic projects to CYA
+* Write your notes somewhere they can be shared
+    * Git[something] issue
+    * Wiki page
+    * readme
+    * Notes on a shared folder
+</aside>
 
 ## Track, track, track
 
 ![tracks](www/tracks.gif)
 
-## Version control
-
-![flow](www/git-flow.png)
-
 <aside class="notes">
-* Manual VC = acceptable in a pinch, but
-* Lots of tools for this
-* Provides confidence
+* If you don't track it, you can't confidently report on it
+    * Extension of "Measure what matters"
+* Use some sort of referencing system for your work
+    * Not "that notebook I sent you last week" (you sent many)
+    * But "the notebook from experiment 005"
+* Doesn't have to be a complex system for tracking
+    * Don't spend more time tracking than you do doing
+    * Simple xlsx/csv often suffices
+* Lots of tools to help
+    * Jira
+    * GH Issues
+* Gives you confidence that you know where things are, are organised, and have
+things under control
 </aside>
 
 ## Automate it 
@@ -107,6 +143,20 @@ output:
     * Even just note down your steps as you go, semi-automates it for next time
     * Eventually can add snippets for each step
     * Finally roll up in to a solution
+</aside>
+
+## Use version control
+
+![flow](www/git-flow.png)
+
+<aside class="notes">
+* Manual VC = acceptable in a pinch
+* But if you're writing code, you need a more robust solution
+* Lots of tools for this - personal favourite is git
+* Integrates doing with organising, recording, and sharing (e.g. with GH)
+* Gives you understandable audit trails
+* Lots of tools provide features for integrating QA with your work
+    * E.g. issues, pull/merge requests
 </aside>
 
 ## Bucket and move on
@@ -124,12 +174,10 @@ output:
     * Solves the problem?
     * Effort & duration?
     * Need to proceed?
-* Progress to goal - set time bucket, keep improving until time runs out, then stop    
+* Model tuning - set time bucket, keep improving until time runs out, then stop    
 </aside>
 
 # Almost life advice
-
-## Embrace others
 
 ## Recognise yourself
 
@@ -138,6 +186,7 @@ output:
 ![presenter](www/larry-presenter.gif)
 
 <aside class="notes">
+* Important as this field can be tough, there can be a lot of pressure
 * Saw the quote on an advert, at the time thought it was funny, but it stuck with me
 * Everyone I've met has imposter syndrome
 * Recognise your achievements/embrace that you don't know everything
@@ -160,31 +209,38 @@ Embrace [meta learning](https://edwinth.github.io/meta-learning/)
 * Hint: because it fits your definition of who you are/what you do
 </aside>
 
+## Embrace others
+
+![hug](www/hug.gif)
+
+<aside class="notes">
+* Working with others who are not like you will enhance you
+* Other people know things you don't
+* You know things they don't
+* You can learn from them (great)
+* And share your knowledge with them (builds confience)
+* An outside perspective is important
+    * Spot things you missed
+    * Suggest something you didn't think of
+</aside>
+
 
 # Deliver value
 
-## 
+## Pick the right metric
 
 > "Just tell me what to optimise on!" - Hilary Parker, Not So Standard Deviations
 
 <aside class="notes">
-* What is the most important metric to your customer?
+* (Great podcast)
+* What is the most important metric to your customer? 
+* What do they _really_ care about?
 * If you don't know, ask!
 * Make sure your solution addresses that metric
+    * Don't solve for X if Y is the real target
 </aside>
 
-
-## Answer > Process
-
-<aside class="notes">
-* Your process is (probably) interesting, but tell your customer the answer
-* Then they can decide how much they care about the process
-* It doesn't matter if your process was perfect if the answer is inconsequential
-* But don't completely abandon a description of process, especially with colleagues
-    * As your answer might not be so valid if your process was bad!
-</aside>
-
-## Make a plot
+## Explain your work
 
 ![vader](www/graphs-vader.PNG)
 
@@ -197,7 +253,7 @@ thing you were optimising
 </aside>
 
 
-## {data-background="www/perspective.svg"}
+## Put it in perspective {data-background="www/perspective.svg"}
 
 <aside class="notes">
 * Your model metrics are good
@@ -214,6 +270,12 @@ thing you were optimising
     * Demonstrate _how_ your solution solves the problem
 * Remember - it's just data/work    
 </aside>
+
+## Those principles again
+
+1. Meet your customer
+2. Do some analysis
+3. Keep it simple
 
 # Thank you
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Things I have learned doing data" />
-  <meta name="dcterms.date" content="2018-08-01" />
+  <meta name="dcterms.date" content="2018-08-02" />
   <title>I opened my project and there was a bug</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -451,8 +451,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
 <section>
     <h1 class="title">I opened my project and there was a bug</h1>
-    <h2 class="author">Things I have learned ‘doing data’</h2>
-    <h3 class="date">2018-08-01</h3>
+    <h2 class="author">Things I have learned doing data</h2>
+    <h3 class="date">2018-08-02</h3>
 </section>
 
 <section id="section" class="slide level2">
@@ -496,11 +496,11 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p><img src="www/analysis.gif" alt="analysis" /></p>
 <aside class="notes">
 <ul>
-<li>Understand the issue, understand the data</li>
-<li>Is the issue noteworthy?</li>
-<li>What are the (sub)populations</li>
+<li>Helps you to understand the issue, understand the data</li>
+<li>Helps quantify if the issue noteworthy?</li>
+<li>What are the (sub)populations?</li>
 <li>Size your data = size the problem</li>
-<li>Let’s you talk about the impact of your work</li>
+<li>Let’s you talk about the impact of your work, e.g. affects X customers, Y% of products</li>
 </ul>
 </aside>
 </section><section id="section-1" class="slide level2" data-background="www/solve-problem.jpg">
@@ -510,7 +510,11 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Focus your efforts on things that solve the customer’s problem</li>
 <li>If it’s not helping you solve the problem, why are you doing it?</li>
 <li>E.g. intricate solution for insignificant subpopulation isn’t really solving the problem, it’s tinkering</li>
-<li>Separate tack - X was an issue, so we did Y to solve/circumvent it</li>
+<li>Separate tack - X was an issue, so we did Y to solve/circumvent it
+<ul>
+<li>I.e. solve the problem before you report on it</li>
+<li>Or at least propose solutions (if you can!)</li>
+</ul></li>
 </ul>
 </aside>
 </section><section id="keep-it-simple-stupid" class="slide level2">
@@ -521,27 +525,74 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Assuming we need “an algorithm” or “analytics”</li>
 <li>Can you solve the problem by counting and sorting? Do that.</li>
 <li>Does a simple model (e.g. linear/logistic regression) do as well as a complex one? Use it.</li>
-<li></li>
+<li>Does a simple, but less “elegant” bit of code solve your problem - use it, don’t re-write it!</li>
 </ul>
 </aside>
 </section></section>
 <section><section id="managing-complexity" class="titleslide slide level1"><h1>Managing complexity</h1></section><section id="ask-questions" class="slide level2">
 <h2>Ask questions</h2>
 <p><img src="www/questions-largest.gif" alt="questions" /></p>
+<aside class="notes">
+<ul>
+<li>Seems obvious but I’ve seen questions not be asked and work proceed based on hunches/guesses</li>
+<li>Ask <em>open</em> questions at the start, narrow down later
+<ul>
+<li>Can you tell me about…</li>
+<li>What do you see the impact of X as?</li>
+<li>What outcome(s) would you like to see</li>
+</ul></li>
+<li>This will help build your understanding of the issue</li>
+<li>Take note of the answer</li>
+<li>If you find yourself asking the same questions at the start of a project, turn then in to a resource for you/others in the future!</li>
+</ul>
+</aside>
 </section><section id="write-it-down" class="slide level2">
 <h2>Write it down</h2>
 <p><img src="www/notes.gif" alt="notes" /></p>
+<aside class="notes">
+<ul>
+<li>Helps me to remember things, not necessarily for everyone, but use a technique</li>
+<li>Gives you a reference for later</li>
+<li>Write it for yourself, but also get responses/feedback in writing
+<ul>
+<li>E.g. initial request, clarifications, sign off</li>
+<li>Useful to summarise your understanding for a collaborator</li>
+<li>Especially for dynamic/chaotic projects to CYA</li>
+</ul></li>
+<li>Write your notes somewhere they can be shared
+<ul>
+<li>Git[something] issue</li>
+<li>Wiki page</li>
+<li>readme</li>
+<li>Notes on a shared folder</li>
+</ul></li>
+</ul>
+</aside>
 </section><section id="track-track-track" class="slide level2">
 <h2>Track, track, track</h2>
 <p><img src="www/tracks.gif" alt="tracks" /></p>
-</section><section id="version-control" class="slide level2">
-<h2>Version control</h2>
-<p><img src="www/git-flow.png" alt="flow" /></p>
 <aside class="notes">
 <ul>
-<li>Manual VC = acceptable in a pinch, but</li>
-<li>Lots of tools for this</li>
-<li>Provides confidence</li>
+<li>If you don’t track it, you can’t confidently report on it
+<ul>
+<li>Extension of “Measure what matters”</li>
+</ul></li>
+<li>Use some sort of referencing system for your work
+<ul>
+<li>Not “that notebook I sent you last week” (you sent many)</li>
+<li>But “the notebook from experiment 005”</li>
+</ul></li>
+<li>Doesn’t have to be a complex system for tracking
+<ul>
+<li>Don’t spend more time tracking than you do doing</li>
+<li>Simple xlsx/csv often suffices</li>
+</ul></li>
+<li>Lots of tools to help
+<ul>
+<li>Jira</li>
+<li>GH Issues</li>
+</ul></li>
+<li>Gives you confidence that you know where things are, are organised, and have things under control</li>
 </ul>
 </aside>
 </section><section id="automate-it" class="slide level2">
@@ -556,6 +607,22 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Even just note down your steps as you go, semi-automates it for next time</li>
 <li>Eventually can add snippets for each step</li>
 <li>Finally roll up in to a solution</li>
+</ul></li>
+</ul>
+</aside>
+</section><section id="use-version-control" class="slide level2">
+<h2>Use version control</h2>
+<p><img src="www/git-flow.png" alt="flow" /></p>
+<aside class="notes">
+<ul>
+<li>Manual VC = acceptable in a pinch</li>
+<li>But if you’re writing code, you need a more robust solution</li>
+<li>Lots of tools for this - personal favourite is git</li>
+<li>Integrates doing with organising, recording, and sharing (e.g. with GH)</li>
+<li>Gives you understandable audit trails</li>
+<li>Lots of tools provide features for integrating QA with your work
+<ul>
+<li>E.g. issues, pull/merge requests</li>
 </ul></li>
 </ul>
 </aside>
@@ -578,14 +645,12 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Effort &amp; duration?</li>
 <li>Need to proceed?</li>
 </ul></li>
-<li>Progress to goal - set time bucket, keep improving until time runs out, then stop<br />
+<li>Model tuning - set time bucket, keep improving until time runs out, then stop<br />
 </li>
 </ul>
 </aside>
 </section></section>
-<section><section id="almost-life-advice" class="titleslide slide level1"><h1>Almost life advice</h1></section><section id="embrace-others" class="slide level2">
-<h2>Embrace others</h2>
-</section><section id="recognise-yourself" class="slide level2">
+<section><section id="almost-life-advice" class="titleslide slide level1"><h1>Almost life advice</h1></section><section id="recognise-yourself" class="slide level2">
 <h2>Recognise yourself</h2>
 <blockquote>
 <p>“Stuart Lee is not funny and has nothing to say” - Telegraph [via Stuart Lee show poster]</p>
@@ -593,6 +658,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p><img src="www/larry-presenter.gif" alt="presenter" /></p>
 <aside class="notes">
 <ul>
+<li>Important as this field can be tough, there can be a lot of pressure</li>
 <li>Saw the quote on an advert, at the time thought it was funny, but it stuck with me</li>
 <li>Everyone I’ve met has imposter syndrome</li>
 <li>Recognise your achievements/embrace that you don’t know everything</li>
@@ -616,34 +682,43 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Hint: because it fits your definition of who you are/what you do</li>
 </ul>
 </aside>
+</section><section id="embrace-others" class="slide level2">
+<h2>Embrace others</h2>
+<p><img src="www/hug.gif" alt="hug" /></p>
+<aside class="notes">
+<ul>
+<li>Working with others who are not like you will enhance you</li>
+<li>Other people know things you don’t</li>
+<li>You know things they don’t</li>
+<li>You can learn from them (great)</li>
+<li>And share your knowledge with them (builds confience)</li>
+<li>An outside perspective is important
+<ul>
+<li>Spot things you missed</li>
+<li>Suggest something you didn’t think of</li>
+</ul></li>
+</ul>
+</aside>
 </section></section>
-<section><section id="deliver-value" class="titleslide slide level1"><h1>Deliver value</h1></section><section id="section-2" class="slide level2">
-<h2></h2>
+<section><section id="deliver-value" class="titleslide slide level1"><h1>Deliver value</h1></section><section id="pick-the-right-metric" class="slide level2">
+<h2>Pick the right metric</h2>
 <blockquote>
 <p>“Just tell me what to optimise on!” - Hilary Parker, Not So Standard Deviations</p>
 </blockquote>
 <aside class="notes">
 <ul>
+<li>(Great podcast)</li>
 <li>What is the most important metric to your customer?</li>
+<li>What do they <em>really</em> care about?</li>
 <li>If you don’t know, ask!</li>
-<li>Make sure your solution addresses that metric</li>
-</ul>
-</aside>
-</section><section id="answer-process" class="slide level2">
-<h2>Answer &gt; Process</h2>
-<aside class="notes">
+<li>Make sure your solution addresses that metric
 <ul>
-<li>Your process is (probably) interesting, but tell your customer the answer</li>
-<li>Then they can decide how much they care about the process</li>
-<li>It doesn’t matter if your process was perfect if the answer is inconsequential</li>
-<li>But don’t completely abandon a description of process, especially with colleagues
-<ul>
-<li>As your answer might not be so valid if your process was bad!</li>
+<li>Don’t solve for X if Y is the real target</li>
 </ul></li>
 </ul>
 </aside>
-</section><section id="make-a-plot" class="slide level2">
-<h2>Make a plot</h2>
+</section><section id="explain-your-work" class="slide level2">
+<h2>Explain your work</h2>
 <p><img src="www/graphs-vader.PNG" alt="vader" /></p>
 <aside class="notes">
 <ul>
@@ -653,8 +728,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Strip away anything that’s not your key message; that doesn’t relate to the thing you were optimising</li>
 </ul>
 </aside>
-</section><section id="section-3" class="slide level2" data-background="www/perspective.svg">
-<h2></h2>
+</section><section id="put-it-in-perspective" class="slide level2" data-background="www/perspective.svg">
+<h2>Put it in perspective</h2>
 <aside class="notes">
 <ul>
 <li>Your model metrics are good
@@ -679,6 +754,13 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </li>
 </ul>
 </aside>
+</section><section id="those-principles-again" class="slide level2">
+<h2>Those principles again</h2>
+<ol type="1">
+<li>Meet your customer</li>
+<li>Do some analysis</li>
+<li>Keep it simple</li>
+</ol>
 </section></section>
 <section><section id="thank-you" class="titleslide slide level1"><h1>Thank you</h1></section></section>
     </div>
